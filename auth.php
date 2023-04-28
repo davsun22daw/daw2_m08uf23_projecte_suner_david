@@ -23,13 +23,17 @@
 	   }
 	}
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>
-			AUTENTICACIÓ AMB LDAP 
-		</title>
+		<title>AUTENTICACIÓ AMB LDAP</title>
+		<!-- Importar CSS de Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<a href="http://zend-dasumo.fjeclot.net/projecte/index.php">Torna a la pàgina inicial</a>
+		<div class="container">
+			<a href="http://zend-dasumo.fjeclot.net/projecte/index.php" class="btn btn-primary mt-3">Torna a la pàgina inicial</a>
+		</div>
 	</body>
 </html>
+

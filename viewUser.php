@@ -22,19 +22,28 @@ if ($_GET['usr'] && $_GET['ou']){
     }
 }
 ?>
+<!DOCTYPE html>
 <html>
 <head>
-<title>
-MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP
-</title>
+	<title>MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP</title>
+	<!-- Agregar el enlace al archivo de estilo de Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h2>Formulari de selecció d'usuari</h2>
-<form action="http://zend-dasumo.fjeclot.net/zendldap" method="GET">
-Unitat organitzativa: <input type="text" name="ou"><br>
-Usuari: <input type="text" name="usr"><br>
-<input type="submit"/>
-<input type="reset"/>
-</form>
+	<div class="container">
+		<h2 class="mt-3">Formulari de selecció d'usuari</h2>
+		<form action="http://zend-dasumo.fjeclot.net/zendldap" method="GET">
+			<div class="form-group">
+				<label for="ou">Unitat organitzativa:</label>
+				<input type="text" class="form-control" id="ou" name="ou">
+			</div>
+			<div class="form-group">
+				<label for="usr">Usuari:</label>
+				<input type="text" class="form-control" id="usr" name="usr">
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+			<button type="reset" class="btn btn-secondary">Reiniciar</button>
+		</form>
+	</div>
 </body>
 </html>

@@ -2,55 +2,81 @@
 <html>
 <head>
 	<title>Modificar entrada LDAP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Modificar entrada LDAP</h1>
-<form action="modUser.php" method="POST">
- <label for="uid">UID:</label>
-  <input type="text" id="uid" name="uid"><br><br>
-  <label for="unorg">UNORG:</label>
-  <input type="text" id="unorg" name="unorg"><br><br>
+	<div class="container">
+		<h1 class="text-center">Modificar entrada LDAP</h1>
+		<form action="modUser.php" method="POST">
+			<div class="form-group">
+				<label for="uid">UID:</label>
+				<input type="text" class="form-control" id="uid" name="uid">
+			</div>
 
-  <label for="num_id">Num ID:</label>
-  <input type="radio" id="num_id" name="campo" value="num_id"><br>
+			<div class="form-group">
+				<label for="unorg">UNORG:</label>
+				<input type="text" class="form-control" id="unorg" name="unorg">
+			</div>
 
-  <label for="grup">Grup:</label>
-  <input type="radio" id="grup" name="campo" value="grup"><br>
+			<div class="form-group">
+				<label>Campo:</label>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="num_id" value="num_id">
+					<label class="form-check-label" for="num_id">Num ID</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="grup" value="grup">
+					<label class="form-check-label" for="grup">Grup</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="dir_pers" value="dir_pers">
+					<label class="form-check-label" for="dir_pers">Dir. Personal</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="sh" value="sh">
+					<label class="form-check-label" for="sh">Shell</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="cn" value="cn">
+					<label class="form-check-label" for="cn">Nom Complet</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="sn" value="sn">
+					<label class="form-check-label" for="sn">Cognoms</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="nom" value="nom">
+					<label class="form-check-label" for="nom">Nom</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="mobil" value="mobil">
+					<label class="form-check-label" for="mobil">Mòbil</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="adressa" value="adressa">
+					<label class="form-check-label" for="adressa">Adreça</label>
+				</div>
+				
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="telefon" value="telefon">
+					<label class="form-check-label" for="telefon">Telèfon</label>
+				</div>
+				
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="titol" value="titol">
+					<label class="form-check-label" for="titol">Títol</label>
+				</div>
+				
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="campo" id="descripcio" value="descripcio">
+					<label class="form-check-label" for="descripcio">Descripció</label>
+				</div>
 
-  <label for="dir_pers">Dir. Personal:</label>
-  <input type="radio" id="dir_pers" name="campo" value="dir_pers"><br>
+				<label for="valor" class="form-label">Valor:</label>
+				<input type="text" id="valor" name="valor" class="form-control"><br>
+				
+				<input type="submit" value="Enviar" class="btn btn-primary">
 
-  <label for="sh">Shell:</label>
-  <input type="radio" id="sh" name="campo" value="sh"><br>
-
-  <label for="cn">Nom Complet:</label>
-  <input type="radio" id="cn" name="campo" value="cn"><br>
-
-  <label for="sn">Cognoms:</label>
-  <input type="radio" id="sn" name="campo" value="sn"><br>
-
-  <label for="nom">Nom:</label>
-  <input type="radio" id="nom" name="campo" value="nom"><br>
-
-  <label for="mobil">Mòbil:</label>
-  <input type="radio" id="mobil" name="campo" value="mobil"><br>
-
-  <label for="adressa">Adreça:</label>
-  <input type="radio" id="adressa" name="campo" value="adressa"><br>
-
-  <label for="telefon">Telèfon:</label>
-  <input type="radio" id="telefon" name="campo" value="telefon"><br>
-
-  <label for="titol">Títol:</label>
-  <input type="radio" id="titol" name="campo" value="titol"><br>
-
-  <label for="descripcio">Descripció:</label>
-  <input type="radio" id="descripcio" name="campo" value="descripcio"><br>
-
-  <label for="valor">Valor:</label>
-  <input type="text" id="valor" name="valor"><br>
-
-  <input type="submit" value="Enviar">
 </form>
 </body>
 </html>

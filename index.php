@@ -4,7 +4,6 @@
 	<title>PÀGINA WEB INICIAL DE L'APLICACIÓ</title>
 	<!-- Enlazar los archivos CSS y JavaScript de Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
