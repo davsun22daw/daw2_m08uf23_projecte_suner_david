@@ -5,7 +5,7 @@
 		</title>
 	</head>
 	<body>
-		<form action="http://zend-dasumo.fjeclot.net/autent/auth.php" method="POST">
+		<form action="http://zend-dasumo.fjeclot.net/projecte/auth.php" method="POST">
 			Usuari: <input type="text" name="adm"><br>
 			Contrasenya: <input type="password" name="cts"><br>
 			<input type="submit" value="Envia" />
