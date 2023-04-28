@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modificar entrada LDAP</title>
+</head>
+<body>
+	<h1>Modificar entrada LDAP</h1>
+<form action="modUser.php" method="POST">
+ <label for="uid">UID:</label>
+  <input type="text" id="uid" name="uid"><br><br>
+  <label for="unorg">UNORG:</label>
+  <input type="text" id="unorg" name="unorg"><br><br>
+
+  <label for="num_id">Num ID:</label>
+  <input type="radio" id="num_id" name="campo" value="num_id"><br>
+
+  <label for="grup">Grup:</label>
+  <input type="radio" id="grup" name="campo" value="grup"><br>
+
+  <label for="dir_pers">Dir. Personal:</label>
+  <input type="radio" id="dir_pers" name="campo" value="dir_pers"><br>
+
+  <label for="sh">Shell:</label>
+  <input type="radio" id="sh" name="campo" value="sh"><br>
+
+  <label for="cn">Nom Complet:</label>
+  <input type="radio" id="cn" name="campo" value="cn"><br>
+
+  <label for="sn">Cognoms:</label>
+  <input type="radio" id="sn" name="campo" value="sn"><br>
+
+  <label for="nom">Nom:</label>
+  <input type="radio" id="nom" name="campo" value="nom"><br>
+
+  <label for="mobil">Mòbil:</label>
+  <input type="radio" id="mobil" name="campo" value="mobil"><br>
+
+  <label for="adressa">Adreça:</label>
+  <input type="radio" id="adressa" name="campo" value="adressa"><br>
+
+  <label for="telefon">Telèfon:</label>
+  <input type="radio" id="telefon" name="campo" value="telefon"><br>
+
+  <label for="titol">Títol:</label>
+  <input type="radio" id="titol" name="campo" value="titol"><br>
+
+  <label for="descripcio">Descripció:</label>
+  <input type="radio" id="descripcio" name="campo" value="descripcio"><br>
+
+  <label for="valor">Valor:</label>
+  <input type="text" id="valor" name="valor"><br>
+
+  <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
